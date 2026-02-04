@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Message Important</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Container principal -->
+    <div id="app" class="app">
+        <!-- Zone de dialogue -->
+        <div id="dialogue-container" class="dialogue-container">
+            <!-- Les messages apparaissent ici -->
+        </div>
+
+        <!-- Zone de photo avec carousel (quand une photo est affichée) -->
+        <div id="photo-container" class="photo-container hidden">
+            <div class="carousel-wrapper">
+                <div class="carousel" id="carousel">
+                    <!-- Photos générées par JS -->
+                </div>
+                <div class="carousel-dots" id="carousel-dots">
+                    <!-- Dots générés par JS -->
+                </div>
+            </div>
+            <p id="photo-caption" class="photo-caption"></p>
+            <p class="swipe-hint" id="swipe-hint">← Swipe pour voir plus →</p>
+        </div>
+
+        <!-- Zone de choix multiples -->
+        <div id="choices-container" class="choices-container hidden">
+            <!-- Les choix apparaissent ici -->
+        </div>
+
+        <!-- Indicateur pour continuer -->
+        <div id="tap-indicator" class="tap-indicator">
+            <span>Tap pour continuer</span>
+            <div class="tap-arrow">↓</div>
+        </div>
+
+        <!-- Zone de scroll final -->
+        <div id="final-message" class="final-message hidden">
+            <div class="final-content">
+                <!-- Message final généré par JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay PUB (caché par défaut) -->
+    <div id="ad-overlay" class="ad-overlay hidden">
+        <div class="ad-container">
+            <!-- Contenu de la pub généré par JS -->
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
