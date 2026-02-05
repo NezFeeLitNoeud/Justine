@@ -1,0 +1,9 @@
+# Compliance tooling (local-only)
+compliance_checker.py
+apify_debug.py
+credentials.json
+
+# Readme(s) local
+README.md
+README2.md
+.DS_Store
